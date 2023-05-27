@@ -1,4 +1,12 @@
 local plugins = {
+  -- Enhancements
+  { "airblade/vim-rooter", lazy = false },
+  { "ggandor/leap.nvim", event = "BufEnter" },
+  { "RRethy/vim-illuminate", event = "BufEnter" },
+  { "tpope/vim-speeddating", event = "BufEnter" },
+  { "tpope/vim-repeat", event = "BufEnter" },
+
+  -- LSP/treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -7,8 +15,18 @@ local plugins = {
         "lua",
         "vim",
 
+        --git
+        "git_rebase",
+        "gitcommit",
+        "gitignore",
+
         -- shell
         "bash",
+
+        -- web dev
+        "html",
+        "css",
+        "scss",
 
         -- programming
         "java",
@@ -18,12 +36,13 @@ local plugins = {
 
         -- misc
         "diff",
+        "dockerfile",
         "json",
         "markdown",
+        "proto",
         "regex",
         "sql",
         "toml",
-        "vim",
         "yaml",
       },
     },
@@ -45,11 +64,32 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        -- language server
+        "bash-language-server",
+        "css-lsp",
+        "lua-language-server",
+        "html-lsp",
+        "java-language-server",
+        "kotlin-language-server",
+        "pyright",
+        "rust-analyzer",
+
+        --DAP
+        "debugpy",
+
+        -- Linter
         "jsonlint",
+        "ktlint",
         "mypy",
         "ruff",
-        "lua-language-server",
-        "rust-analyzer",
+        "shellcheck",
+        "yamllint",
+
+        -- Formatter
+        "black",
+        "isort",
+        "rustfmt",
+        "stylua",
       },
     },
   },

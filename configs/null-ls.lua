@@ -21,14 +21,10 @@ local sources = {
   diagnostics.yamllint,
 
   formatting.beautysh,
-  formatting.black.with {
-    extra_args = { "--line-length", "110" },
-  },
+  formatting.black.with { extra_args = { "--line-length", "110" } },
   formatting.buf,
   formatting.fixjson,
-  formatting.isort.with {
-    extra_args = { "--profile", "black" },
-  },
+  formatting.isort.with { extra_args = { "--profile", "black" } },
   formatting.pg_format,
   formatting.rustfmt,
   formatting.stylua,
