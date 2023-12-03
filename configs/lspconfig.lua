@@ -7,7 +7,6 @@ local servers = {
   "cssls",
   "jsonls",
   "lua_ls",
-  "rust_analyzer",
   "pyright",
 }
 
@@ -18,3 +17,6 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- Rust
+local rt = require "rust-tools"
+rt.setup {}

@@ -7,6 +7,8 @@ local plugins = {
   { "tpope/vim-repeat", event = "BufEnter" },
 
   -- LSP/treesitter
+  { "mfussenegger/nvim-dap" },
+  { "simrat39/rust-tools.nvim" },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
